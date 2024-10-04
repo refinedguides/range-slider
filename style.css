@@ -16,11 +16,12 @@ body {
   background: var(--blue-color);
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 .container {
+  margin-block: auto;
   background: #fff;
   padding: 30px;
   border-radius: 10px;
@@ -39,7 +40,7 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
   padding-block: 20px;
 }
 
@@ -53,7 +54,7 @@ body {
   background: var(--gray-color);
   font-size: 1.5rem;
   font-weight: 500;
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   min-width: 64px;
 }
@@ -76,8 +77,8 @@ body {
 .range input::-webkit-slider-thumb {
   pointer-events: auto;
   appearance: none;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   background: var(--blue-color);
   border-radius: 50%;
   cursor: pointer;
